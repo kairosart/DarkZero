@@ -8,52 +8,82 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8b08ec97de616fe5",
+            "id": "5a2fe06e11cc2885",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/Services and ports.md",
+                "file": "Basic Control Bypass/Bypassing MAC filtering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Services and ports"
+              "title": "Bypassing MAC filtering"
             }
           },
           {
-            "id": "2e9185c57de5974c",
+            "id": "bffb451c4ea2a02e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/Adding hosts.md",
+                "file": "Basic Control Bypass/Finding Hideen SSIDs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Adding hosts"
+              "title": "Finding Hideen SSIDs"
             }
           },
           {
-            "id": "4b5a158f457261fa",
+            "id": "b267d3db68e6a999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/SMB Enumeration (unauthenticated).md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SMB Enumeration (unauthenticated)"
+              "title": "index"
+            }
+          },
+          {
+            "id": "e5a624ae20b56cfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "355eaf5027c6671d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Lateral Movement via MSSQL Linked Server"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "oo",
+                "query": "rose",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,36 +151,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ccc02e77c44db05e",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Welcome.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "lucide-ghost",
-              "title": "backlink"
-            }
-          },
-          {
             "id": "0749071249cbc61a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
-                "linksCollapsed": false,
+                "file": "POST EXPLOITATION - DOCKER CONTAINER/Network Pivoting with Ligolo-ng.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from Network Pivoting with Ligolo-ng"
             }
           },
           {
@@ -174,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ENUMERATION/SMB Enumeration (unauthenticated).md",
+                "file": "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SMB Enumeration (unauthenticated)"
+              "title": "Outline of Lateral Movement via MSSQL Linked Server"
             }
           },
           {
@@ -324,7 +335,7 @@
             }
           },
           {
-            "id": "e27b3faf7dc0cf48",
+            "id": "db60bf747bddb875",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -334,7 +345,7 @@
             }
           },
           {
-            "id": "628407b27fbc0517",
+            "id": "da108edba16f1c08",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
@@ -347,7 +358,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -362,55 +373,58 @@
       "bases:Create new base": false,
       "juggl:Juggl global graph": false,
       "webpage-html-export:Export Vault to HTML": false,
-      "oz-clear-unused-images:Clear Unused Images": false
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4b5a158f457261fa",
+  "active": "355eaf5027c6671d",
   "lastOpenFiles": [
-    "README.md",
-    "ENUMERATION/images/Screenshot_2026-03-22_20-33-58.png",
-    "ENUMERATION/images/Screenshot_2026-03-22_20-30-47.png",
-    "ENUMERATION/images/Screenshot_2026-03-22_20-25-31.png",
-    "ENUMERATION/images/Screenshot_2026-03-22_20-16-39.png",
-    "ENUMERATION/images",
-    "images/Screenshot_2026-03-22_19-43-26.png",
-    "ENUMERATION/Services and ports.md",
+    "EXPLOITATION/Sysadmin on DC02 via linked server.md",
+    "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
     "ENUMERATION/SMB Enumeration (unauthenticated).md",
+    "EXPLOITATION",
+    "images/Screenshot_2026-03-23_11-26-43.png",
+    "images/Screenshot_2026-03-23_11-12-52.png",
+    "images/Screenshot_2026-03-23_11-02-24.png",
     "ENUMERATION/Adding hosts.md",
-    "index.md",
-    "ENUMERATION",
-    "images/Screenshot from 2026-03-22 19-55-19.png",
-    "images",
-    "SMB.md",
-    "Enumeration.md",
+    "images/Screenshot_2026-03-23_10-45-18.png",
+    "images/Screenshot_2026-03-23_09-55-52.png",
+    "images/Untitled.md",
+    "images/Screenshot_2026-03-23_09-30-42.png",
+    "Basic Control Bypass/Bypassing MAC filtering.md",
+    "Basic Control Bypass/Finding Hideen SSIDs.md",
+    "Aircrack-ng Essentials/Aircrack-ng.md",
+    "Aircrack-ng Essentials/Airdecap-ng.md",
+    "Aircrack-ng Essentials/Aireplay-ng.md",
+    "Aircrack-ng Essentials/Airgraph-ng.md",
+    "Aircrack-ng Essentials/Airodump-ng.md",
+    "README.md",
     "docs/lib/metadata.json",
-    "Tab 7.md",
     "docs/lib/media/6155340132a851f6089e.svg",
     "docs/lib/media",
+    "docs/lib/fonts/01dcbad1bac635f9c9cd.woff2",
+    "docs/lib/fonts/c504db5c06caaf7cdfba.woff2",
     "docs/lib/fonts/4bb6ac751d1c5478ff3a.woff2",
     "docs/lib/fonts/05b618077343fbbd92b7.ttf",
     "docs/lib/fonts/52ac8f3034507f1d9e53.ttf",
     "docs/lib/fonts/454577c22304619db035.ttf",
     "docs/lib/fonts/70cc7ff27245e82ad414.ttf",
-    "Tab 6.md",
-    "Tab 5.md",
-    "Tab 4.md",
-    "Tab 3.md",
-    "Tab 2.md",
-    "Reverse shell.md",
-    "Privilege Escalation.md",
-    "MSSQL Server.md",
-    "Foothold.md",
-    "Tab 1.md",
-    "images/privileges.png",
-    "images/admin_shell.png",
-    "images/admin_pass.png",
-    "ACT I - Somethig phishy/Investigating.md",
-    "ACT I - Somethig phishy/Ghidra.md",
-    "ACT I - Somethig phishy/Connecting.md",
-    "The Summit/User's flag.md",
-    "The Summit/Shell as o.armstrong.md",
-    "The Summit/Foothold.md",
-    "The Summit/Escalation to Domain Admin.md"
+    "index.md",
+    "Skils Assessment/Scenario.md",
+    "Introduction/Overview.md",
+    "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
+    "Interfaces and Interface Modes/Interface Modes.md",
+    "Connection methods/Connecting to Wi-Fi Networks.md",
+    "Aircrack-ng Essentials/Airmon-ng.md",
+    "802.11 Fundamentals/Authentication Methods.md",
+    "802.11 Fundamentals/802.11 Frames and Types.md",
+    "images/WIFI_infiltration_map.png",
+    "images/ctf_wifi_diagram.png",
+    "Cheatsheet.md",
+    "images/badge.png",
+    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
+    "Wireshark analyzing/🔎 What You’ll See.md",
+    "Wireshark analyzing/✅ Open Your Capture File.md",
+    "EXPLOITATION/Untitled.canvas"
   ]
 }

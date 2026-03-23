@@ -185,6 +185,28 @@
       "ctime": 1759776767799,
       "path": "EXPLOITATION/Initial access.md",
       "subpath": "#Reverse Shell"
+    },
+    {
+      "type": "file",
+      "ctime": 1767469577448,
+      "path": "images/Diagram_internal_Docker_Network.svg"
+    },
+    {
+      "type": "file",
+      "ctime": 1768042290367,
+      "path": "EXPLOITATION/Docker Network Exploration.md",
+      "subpath": "#**2. The container was started with default pgAdmin credentials**"
+    },
+    {
+      "type": "file",
+      "ctime": 1768385170057,
+      "path": "Pivot Map (Attacker Movement Path).md"
+    },
+    {
+      "type": "file",
+      "ctime": 1768848598621,
+      "path": "EXPLOITATION/Clients and shares.md",
+      "subpath": "#Lists clients connected to the server"
     }
   ]
 }

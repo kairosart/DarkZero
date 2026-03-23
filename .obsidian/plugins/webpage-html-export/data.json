@@ -4,7 +4,7 @@
   "inlineAssets": true,
   "includePluginCSS": "",
   "includeSvelteCSS": true,
-  "titleProperty": "K2",
+  "titleProperty": "",
   "customHeadContentPath": "",
   "faviconPath": "",
   "documentWidth": "40em",
@@ -28,7 +28,7 @@
   "addRSSFeed": true,
   "siteURL": "",
   "authorName": "",
-  "vaultTitle": "You Got Mail",
+  "vaultTitle": "",
   "exportPreset": "documents",
   "openAfterExport": true,
   "graphAttractionForce": 1,
@@ -43,24 +43,18 @@
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
-  "exportPath": "/home/emi/external/Obsidian/HTB/Archetype/docs",
+  "exportPath": "/home/emi/external/Obsidian/HTB/Wi-Fi Penetration Testing Basics/docs",
   "filesToExport": [
     [
-      "Enumeration.md",
-      "Foothold.md",
+      "802.11 Fundamentals",
+      "Aircrack-ng Essentials",
+      "Basic Control Bypass",
+      "Connection methods",
+      "Interfaces and Interface Modes",
+      "Introduction",
+      "Skils Assessment",
       "index.md",
-      "MSSQL Server.md",
-      "Privilege Escalation.md",
-      "README.md",
-      "Reverse shell.md",
-      "SMB.md",
-      "Tab 1.md",
-      "Tab 2.md",
-      "Tab 3.md",
-      "Tab 4.md",
-      "Tab 5.md",
-      "Tab 6.md",
-      "Tab 7.md"
+      "README.md"
     ]
   ]
 }
