@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "PRIVILEGE ESCALATION/Escalation attack.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Escalation attack"
             }
           },
           {
@@ -73,17 +73,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+                "file": "PRIVILEGE ESCALATION/Enumerate.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Lateral Movement via MSSQL Linked Server"
+              "title": "Enumerate"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+                "file": "PRIVILEGE ESCALATION/Escalation attack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Lateral Movement via MSSQL Linked Server"
+              "title": "Outline of Escalation attack"
             }
           },
           {
@@ -377,20 +377,31 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "355eaf5027c6671d",
+  "active": "e5a624ae20b56cfa",
   "lastOpenFiles": [
-    "EXPLOITATION/Sysadmin on DC02 via linked server.md",
+    "PRIVILEGE ESCALATION/Enumerate.md",
+    "EXPLOITATION/Reverse shell on DC02.md",
+    "PRIVILEGE ESCALATION/Escalation attack.md",
+    "images/Screenshot_2026-03-23_20-07-30.png",
+    "images/Screenshot_2026-03-23_20-03-34.png",
+    "images/Screenshot_2026-03-23_20-00-50.png",
+    "images/Screenshot_2026-03-23_20-00-12.png",
+    "images/Screenshot_2026-03-23_19-58-27.png",
+    "images/Screenshot_2026-03-23_19-53-52.png",
+    "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
+    "PRIVILEGE ESCALATION",
+    "images/Screenshot_2026-03-23_19-27-47.png",
     "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+    "EXPLOITATION/xp_cmdshell enabled on DC02.md",
+    "EXPLOITATION/Sysadmin on DC02 via linked server.md",
+    "images/Screenshot_2026-03-23_19-11-12.png",
+    "images/Screenshot_2026-03-23_19-00-44.png",
+    "index.md",
     "ENUMERATION/SMB Enumeration (unauthenticated).md",
     "EXPLOITATION",
     "images/Screenshot_2026-03-23_11-26-43.png",
-    "images/Screenshot_2026-03-23_11-12-52.png",
-    "images/Screenshot_2026-03-23_11-02-24.png",
     "ENUMERATION/Adding hosts.md",
-    "images/Screenshot_2026-03-23_10-45-18.png",
-    "images/Screenshot_2026-03-23_09-55-52.png",
     "images/Untitled.md",
-    "images/Screenshot_2026-03-23_09-30-42.png",
     "Basic Control Bypass/Bypassing MAC filtering.md",
     "Basic Control Bypass/Finding Hideen SSIDs.md",
     "Aircrack-ng Essentials/Aircrack-ng.md",
@@ -400,7 +411,6 @@
     "Aircrack-ng Essentials/Airodump-ng.md",
     "README.md",
     "docs/lib/metadata.json",
-    "docs/lib/media/6155340132a851f6089e.svg",
     "docs/lib/media",
     "docs/lib/fonts/01dcbad1bac635f9c9cd.woff2",
     "docs/lib/fonts/c504db5c06caaf7cdfba.woff2",
@@ -408,8 +418,6 @@
     "docs/lib/fonts/05b618077343fbbd92b7.ttf",
     "docs/lib/fonts/52ac8f3034507f1d9e53.ttf",
     "docs/lib/fonts/454577c22304619db035.ttf",
-    "docs/lib/fonts/70cc7ff27245e82ad414.ttf",
-    "index.md",
     "Skils Assessment/Scenario.md",
     "Introduction/Overview.md",
     "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
@@ -417,14 +425,6 @@
     "Connection methods/Connecting to Wi-Fi Networks.md",
     "Aircrack-ng Essentials/Airmon-ng.md",
     "802.11 Fundamentals/Authentication Methods.md",
-    "802.11 Fundamentals/802.11 Frames and Types.md",
-    "images/WIFI_infiltration_map.png",
-    "images/ctf_wifi_diagram.png",
-    "Cheatsheet.md",
-    "images/badge.png",
-    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
-    "Wireshark analyzing/🔎 What You’ll See.md",
-    "Wireshark analyzing/✅ Open Your Capture File.md",
     "EXPLOITATION/Untitled.canvas"
   ]
 }
