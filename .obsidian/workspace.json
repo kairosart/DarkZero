@@ -8,48 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5a2fe06e11cc2885",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Control Bypass/Bypassing MAC filtering.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Bypassing MAC filtering"
-            }
-          },
-          {
-            "id": "bffb451c4ea2a02e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Control Bypass/Finding Hideen SSIDs.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Finding Hideen SSIDs"
-            }
-          },
-          {
             "id": "b267d3db68e6a999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "RCE as darkzero-ext user svc_sql"
             }
           },
           {
@@ -58,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRIVILEGE ESCALATION/Escalation attack.md",
+                "file": "EXPLOITATION/Reverse shell on DC02.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Escalation attack"
+              "title": "Reverse shell on DC02"
             }
           },
           {
@@ -73,17 +43,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRIVILEGE ESCALATION/Enumerate.md",
+                "file": "PRIVILEGE ESCALATION/Pivot through *DC02* to reach *DC01* internally.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Enumerate"
+              "title": "Pivot through *DC02* to reach *DC01* internally"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PRIVILEGE ESCALATION/Escalation attack.md",
+                "file": "PRIVILEGE ESCALATION/Pivot through *DC02* to reach *DC01* internally.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Escalation attack"
+              "title": "Outline of Pivot through *DC02* to reach *DC01* internally"
             }
           },
           {
@@ -377,29 +347,31 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e5a624ae20b56cfa",
+  "active": "355eaf5027c6671d",
   "lastOpenFiles": [
-    "PRIVILEGE ESCALATION/Enumerate.md",
-    "EXPLOITATION/Reverse shell on DC02.md",
+    "images/Screenshot_2026-03-24_11-41-07.png",
     "PRIVILEGE ESCALATION/Escalation attack.md",
+    "PRIVILEGE ESCALATION/Pivot through *DC02* to reach *DC01* internally.md",
+    "images/darkzero_network_schema.svg",
+    "images/Screenshot_2026-03-24_11-27-10.png",
+    "images/Screenshot_2026-03-24_11-13-43.png",
+    "EXPLOITATION/Reverse shell on DC02.md",
+    "images/Screenshot_2026-03-24_10-53-48.png",
+    "PRIVILEGE ESCALATION/Enumerate.md",
+    "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
+    "EXPLOITATION/xp_cmdshell enabled on DC02.md",
+    "images/Screenshot_2026-03-24_10-34-37.png",
+    "images/Screenshot_2026-03-24_10-32-10.png",
+    "images/Screenshot_2026-03-24_10-18-52.png",
+    "EXPLOITATION/Sysadmin on DC02 via linked server.md",
+    "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+    "index.md",
     "images/Screenshot_2026-03-23_20-07-30.png",
     "images/Screenshot_2026-03-23_20-03-34.png",
     "images/Screenshot_2026-03-23_20-00-50.png",
-    "images/Screenshot_2026-03-23_20-00-12.png",
-    "images/Screenshot_2026-03-23_19-58-27.png",
-    "images/Screenshot_2026-03-23_19-53-52.png",
-    "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
     "PRIVILEGE ESCALATION",
-    "images/Screenshot_2026-03-23_19-27-47.png",
-    "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
-    "EXPLOITATION/xp_cmdshell enabled on DC02.md",
-    "EXPLOITATION/Sysadmin on DC02 via linked server.md",
-    "images/Screenshot_2026-03-23_19-11-12.png",
-    "images/Screenshot_2026-03-23_19-00-44.png",
-    "index.md",
     "ENUMERATION/SMB Enumeration (unauthenticated).md",
     "EXPLOITATION",
-    "images/Screenshot_2026-03-23_11-26-43.png",
     "ENUMERATION/Adding hosts.md",
     "images/Untitled.md",
     "Basic Control Bypass/Bypassing MAC filtering.md",
@@ -423,8 +395,6 @@
     "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
     "Interfaces and Interface Modes/Interface Modes.md",
     "Connection methods/Connecting to Wi-Fi Networks.md",
-    "Aircrack-ng Essentials/Airmon-ng.md",
-    "802.11 Fundamentals/Authentication Methods.md",
     "EXPLOITATION/Untitled.canvas"
   ]
 }
