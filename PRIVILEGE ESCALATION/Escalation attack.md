@@ -35,7 +35,7 @@ Let's explore.
 ```powershell
 ipconfig /all
 ```
-
+[[]]
 ![[Screenshot_2026-03-24_11-27-10.png]]
 
 🔍 *DC02* is on an internal network *172.16.20.0/24* with *DC01* at 172.16.20.1 as the gateway!
@@ -54,4 +54,4 @@ Here's the full network topology. Key takeaways:
 - The reverse shell comes back from DC02 to Kali over the VPN through DC01 as the gateway
 - **Next step** is escalating from `svc_sql` on DC02 toward Domain Admin on DC01 — ADCS is the likely path 🎯
 
-**Next step:** [[Pivot through *DC02* to reach *DC01* internally]]
+**Next step:** [[Tunneling through DC02 with chisel]]
