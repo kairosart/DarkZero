@@ -225,10 +225,10 @@
   "modalBehavior": "always",
   "singleImageModalSettings": {
     "conversionPresetName": "None",
-    "outputFormat": "NONE",
+    "outputFormat": "PNG",
     "quality": 100,
     "colorDepth": 1,
-    "resizeMode": "None",
+    "resizeMode": "Fit",
     "desiredWidth": 800,
     "desiredHeight": 600,
     "desiredLongestEdge": 1000,

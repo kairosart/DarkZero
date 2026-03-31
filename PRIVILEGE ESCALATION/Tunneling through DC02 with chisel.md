@@ -1,10 +1,14 @@
+![[chisel_pivot_schema_v4.png|809]]
 
-![[chisel_pivot_schema_v4.svg|891]]
 You need 3 terminals open on Kali simultaneously — one for the MSSQL session, one for chisel server, one for the HTTP server. 🎯
 
-
+Follow the steps below.
 
 #powershell_DC2 
+
+## 0. You here from [[Lateral Movement via MSSQL Linked Server]] - MSSQL login on DC01 (guest role)
+
+![[image.png]]
 ### 1. Confirm DC01 is at 172.16.20.1
 
 ```powershell
@@ -64,7 +68,7 @@ On the chisel shell from point 3 you'll get.
 ### 6. Kali: configure proxychains
 
 ```bash
-bash# Add to /etc/proxychains4.conf (last line)
+# Add to /etc/proxychains4.conf (last line)
 echo "socks5 127.0.0.1 1080" | sudo tee -a /etc/proxychains4.conf
 ```
 
