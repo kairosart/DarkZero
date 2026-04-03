@@ -13,6 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "ENUMERATION/SMB Enumeration (unauthenticated).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "SMB Enumeration (unauthenticated)"
+            }
+          },
+          {
+            "id": "e5a624ae20b56cfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "EXPLOITATION/Reverse shell on DC02.md",
                 "mode": "source",
                 "source": false,
@@ -23,33 +38,18 @@
             }
           },
           {
-            "id": "e5a624ae20b56cfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Lateral Movement via MSSQL Linked Server"
-            }
-          },
-          {
             "id": "db1fd51e7b31784f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRIVILEGE ESCALATION/Tunneling through DC02 with chisel.md",
+                "file": "EXPLOITATION/WinPEAS and CVE-2024-30088.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Tunneling through DC02 with chisel"
+              "title": "WinPEAS and CVE-2024-30088"
             }
           },
           {
@@ -58,17 +58,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRIVILEGE ESCALATION/ADCS enumeration.md",
+                "file": "PRIVILEGE ESCALATION/Enumerate.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ADCS enumeration"
+              "title": "Enumerate"
+            }
+          },
+          {
+            "id": "451ed20d0d180b0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PRIVILEGE ESCALATION/Attack Path - RBCD via MachineAccountQuota.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Attack Path - RBCD via MachineAccountQuota"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -170,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PRIVILEGE ESCALATION/ADCS enumeration.md",
+                "file": "EXPLOITATION/WinPEAS and CVE-2024-30088.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ADCS enumeration"
+              "title": "Outline of WinPEAS and CVE-2024-30088"
             }
           },
           {
@@ -362,35 +377,39 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f637a10480f1115a",
+  "active": "db1fd51e7b31784f",
   "lastOpenFiles": [
-    "images/Screenshot_2026-03-31_10-03-15.png",
-    "images/Screenshot from 2026-03-31 11-59-34.png",
-    "PRIVILEGE ESCALATION/Tunneling through DC02 with chisel.md",
-    "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
-    "images/image.png",
+    "images/Screenshot_2026-04-03_10-34-13.png",
     "EXPLOITATION/Reverse shell on DC02.md",
-    "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
+    "EXPLOITATION/WinPEAS and CVE-2024-30088.md",
+    "images/Screenshot_2026-04-03_09-49-56.png",
     "EXPLOITATION/xp_cmdshell enabled on DC02.md",
     "PRIVILEGE ESCALATION/Enumerate.md",
-    "images/chisel_pivot_schema_v4.svg",
-    "images/chisel_pivot_schema.svg",
-    "images/chisel_pivot_schema_v4.png",
-    "images/chisel_pivot_schema.png",
+    "ENUMERATION/SMB Enumeration (unauthenticated).md",
+    "EXPLOITATION/Lateral Movement via MSSQL Linked Server.md",
+    "EXPLOITATION/RCE as darkzero-ext user svc_sql.md",
+    "PRIVILEGE ESCALATION/Skip BloodHound — manual ACL check.md",
     "EXPLOITATION/Sysadmin on DC02 via linked server.md",
-    "PRIVILEGE ESCALATION/Escalation attack.md",
+    "PRIVILEGE ESCALATION/Tunneling through DC02 with chisel.md",
+    "images/Screenshot_2026-04-01_16-49-34.png",
+    "images/Screenshot_2026-04-01_10-37-11.png",
+    "ENUMERATION/Adding hosts.md",
+    "ENUMERATION/Services and ports.md",
+    "PRIVILEGE ESCALATION/Attack Path - RBCD via MachineAccountQuota.md",
+    "images/Screenshot_2026-04-01_09-18-41.png",
     "PRIVILEGE ESCALATION/ADCS enumeration.md",
-    "images/Screenshot_2026-03-23_11-02-24.png",
-    "images/chisel_pivot_schema_v2.svg",
-    "images/Screenshot_2026-03-30_09-43-51.png",
-    "images/Screenshot_2026-03-30_09-41-06.png",
+    "images/Screenshot_2026-04-01_09-11-10.png",
+    "images/Screenshot_2026-04-01_09-06-59.png",
+    "PRIVILEGE ESCALATION/Escalation attack.md",
+    "images/Screenshot_2026-03-31_10-41-55.png",
+    "images/Screenshot_2026-03-31_10-03-15.png",
+    "images/Screenshot from 2026-03-31 11-59-34.png",
+    "images/image.png",
     "PRIVILEGE ESCALATION/Drawing 2026-03-28 11.03.22.excalidraw.md",
     "EXPLOITATION/Drawing 2026-03-27 10.52.23.excalidraw.md",
     "index.md",
     "PRIVILEGE ESCALATION",
-    "ENUMERATION/SMB Enumeration (unauthenticated).md",
     "EXPLOITATION",
-    "ENUMERATION/Adding hosts.md",
     "images/Untitled.md",
     "Basic Control Bypass/Bypassing MAC filtering.md",
     "Basic Control Bypass/Finding Hideen SSIDs.md",
@@ -398,8 +417,6 @@
     "Aircrack-ng Essentials/Airdecap-ng.md",
     "Aircrack-ng Essentials/Aireplay-ng.md",
     "Aircrack-ng Essentials/Airgraph-ng.md",
-    "Aircrack-ng Essentials/Airodump-ng.md",
-    "README.md",
     "docs/lib/metadata.json",
     "docs/lib/media",
     "docs/lib/fonts/01dcbad1bac635f9c9cd.woff2",
@@ -408,8 +425,6 @@
     "docs/lib/fonts/05b618077343fbbd92b7.ttf",
     "docs/lib/fonts/52ac8f3034507f1d9e53.ttf",
     "docs/lib/fonts/454577c22304619db035.ttf",
-    "Skils Assessment/Scenario.md",
-    "Introduction/Overview.md",
     "EXPLOITATION/Untitled.canvas"
   ]
 }

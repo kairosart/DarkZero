@@ -148,3 +148,8 @@ proxychains bloodhound-python -u 'john.w' -p 'RFulUtONCOL!' \
   -c All --zip --dns-tcp
 ```
 
+![[Screenshot_2026-03-31_10-41-55.png]]
+
+If you don't have Bloodhound installed or you want to make a Manual Check go to:
+
+**Next step:** [[Skip BloodHound — manual ACL check]]
